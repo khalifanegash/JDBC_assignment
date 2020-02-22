@@ -1,5 +1,6 @@
 package se.ecutb.khalifa;
 
+import se.ecutb.khalifa.data.City;
 import se.ecutb.khalifa.data.CityDaoJDBC;
 import se.ecutb.khalifa.data.Database;
 
@@ -19,7 +20,14 @@ public class App
         //daoJDBC.findByCode("Nld").forEach(System.out::println);
         // System.out.println(daoJDBC.findByCode("nld").size());
 
-        daoJDBC.findByName("Breda").forEach(System.out::println);
+        //daoJDBC.findByName("Breda").forEach(System.out::println);
+
+        City city = new City("Amersfoort","NLD","Utrecht",126270);
+        //System.out.println(daoJDBC.add(city));
+        //System.out.println(daoJDBC.delete(city));
+
+        //daoJDBC.findAll().forEach(System.out::println);
+        System.out.println(daoJDBC.findAll().size());
 
 
 

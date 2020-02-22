@@ -24,7 +24,7 @@ public class AppTest
     @Test
     public void find_by_code_test()
     {
-        assertEquals( 28,cityDao.findByCode("nld").size() );
+        assertEquals( 29,cityDao.findByCode("nld").size() );
     }
 
     @Test
@@ -35,7 +35,7 @@ public class AppTest
     @Test
     public void find_all_test()
     {
-        assertEquals( 4079,cityDao.findAll().size() );
+        assertEquals( 4080,cityDao.findAll().size() );
     }
 
     @Test
